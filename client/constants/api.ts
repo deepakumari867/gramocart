@@ -1,4 +1,3 @@
-
 // import axios from "axios";
 // import { Platform } from "react-native";
 
@@ -18,11 +17,19 @@
 // export default api;
 
 import axios from "axios";
+import Constants from "expo-constants";
+import { Platform } from "react-native";
 
-const API_URL = "https://gramocart-l6j9.vercel.app/api";
+const hostUri = Constants.expoConfig?.hostUri ?? "localhost:3000";
+const host = hostUri.split(":")[0];
+
+const LOCAL_API_URL =
+  Platform.OS === "web"
+    ? "http://localhost:3000/api"
+    : `http://${host}:3000/api`;
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: LOCAL_API_URL,
   headers: {
     "Content-Type": "application/json",
   },

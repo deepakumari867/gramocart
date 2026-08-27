@@ -36,13 +36,6 @@
         }
       ],
       "expo-secure-store",
-      [
-        "@stripe/stripe-react-native",
-        {
-          "merchantIdentifier": "merchant.com.anonymous.client",
-          "enableGooglePay": true
-        }
-      ],
       "@react-native-community/datetimepicker"
     ],
     "experiments": {
@@ -50,10 +43,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "6597c320-b532-4dbd-a51b-6bf2a8a658bb"
-      }
+      "router": {}
     }
   }
 }
