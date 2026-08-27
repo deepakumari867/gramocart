@@ -19,7 +19,7 @@
 
 import axios from "axios";
 
-const API_URL = "https://ecommerceapp-nine.vercel.app/api";
+const API_URL = "https://gramocart-l6j9.vercel.app/api";
 
 const api = axios.create({
   baseURL: API_URL,
