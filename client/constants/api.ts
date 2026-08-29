@@ -23,7 +23,7 @@ import { Platform } from "react-native";
 const hostUri = Constants.expoConfig?.hostUri ?? "localhost:3000";
 const host = hostUri.split(":")[0];
 
-const API_URL = "https://gramocart-1kpyqgbq0-deepakumari867s-projects.vercel.app/api";
+const API_URL = "https://gramocart-l6j9.vercel.app/api";
 
 const api = axios.create({
   baseURL: API_URL,
