@@ -46,7 +46,7 @@ app.use("/api/payment", paymentRoutes);
 app.use("/api/sale", saleRoutes);
 app.use("/api/first-order", firstOrderRoutes);
 
-// app.listen(port, () => {
-//     console.log(`Server is running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
 export default app;
