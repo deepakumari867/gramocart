@@ -7,13 +7,13 @@ import { getAnalytics, isSupported } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDNJ52_U-mqdkpxthbR0ZsJBCTAAS2JSUk",
-  authDomain: "gramokart.firebaseapp.com",
-  projectId: "gramokart",
-  storageBucket: "gramokart.firebasestorage.app",
-  messagingSenderId: "225141346573",
-  appId: "1:225141346573:web:9be319311605663adf6044",
-  measurementId: "G-Z7K8PTLFCH"
+  apiKey: "AIzaSyBsYZxSrk5yrQdp1yfTe1AwodW4J2cK6lQ",
+  authDomain: "gramo-ecom.firebaseapp.com",
+  projectId: "gramo-ecom",
+  storageBucket: "gramo-ecom.firebasestorage.app",
+  messagingSenderId: "463771513787",
+  appId: "1:463771513787:web:3792779cf831a14ede4a9e",
+  measurementId: "G-1WLZ0DHTPC"
 };
 
 // Initialize Firebase
