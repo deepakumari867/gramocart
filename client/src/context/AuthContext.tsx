@@ -101,7 +101,12 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const getToken = async () => {
     if (firebaseUser) {
-      return await firebaseUser.getIdToken();
+      try {
+        return await firebaseUser.getIdToken();
+      } catch (error) {
+        console.warn("Failed to get Firebase token:", error);
+        return null;
+      }
     }
     return null;
   };
